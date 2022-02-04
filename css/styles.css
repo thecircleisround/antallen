@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+label {font-weight:bold;}
+fieldset {padding:0 1.4em 1.4em 1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+legend {font-weight:bold;font-size:1.2em;margin-top:-0.2em;margin-bottom:1em;}
+fieldset, #IE8#HACK {padding-top:1.4em;}
+legend, #IE8#HACK {margin-top:0;margin-bottom:0;}
+select {background-color:#fff;border-width:1px;border-style:solid;}
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+.info a {color:#205791;}
+
+.paragraph {font-size:20px;text-align:center;font-family: 'Yanone Kaffeesatz', sans-serif;}
+.jp-playlist {font-size:20px;}
+.jp-controls {font-size:40px;text-decoration:none;outline:none;border-color:none;}
+.jp-controls:active {text-decoration:none;text-decoration:none;}   
+a:focus, a:hover {color:grey;}
+a {color:black;text-decoration:none}
+li {text-decoration:none; list-style-type:none;}
+.contact {text-align:center;}
+.content {margin-top:15%;}
+.dowe {border-right-style:inset;border-right-width:3px; border-right-color:black; margin-right:2.4em;margin-left:2.4em}
+.wedo {font-size: 30px;font-family: 'Roboto Slab', serif;}
+.axception {color:grey;}
+.change {background-color:black}
+a:hover .change {background-color:grey;}
+
+
+.menu {font-family: 'Roboto Slab', serif; font-size:30px; background-color:rgb(255, 255, 255);}  
+.menu ul {font-family: 'Roboto Slab', serif;text-align:center; padding-bottom:15px; padding-top:20px;}
+
+@media (min-width: 1000px) { 
+    .pagebreak {margin-bottom:100%;}
+    .logocontent {margin-top:15%;}
+}
+
+@media (min-width: 414px) and (max-width: 849px) {
+.menu {font-family: 'Roboto Slab', serif;  font-size:30px; background-color:rgb(255, 255, 255); margin-left: 0;} 
+.logocontent {margin-top:2%;margin-bottom:12%;}
+.menu ul {font-family: 'Roboto Slab', serif;text-align:center; padding-bottom:0px;margin-right:0;}
+.pagebreak {margin-bottom:70%;}
+}

@@ -1,0 +1,68 @@
+    <!DOCTYPE html PUBLIC>
+<html>
+    <head>
+       <title>Ohene Recordings</title>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Ohene Recordings official website">
+        <meta name="keywords" content="Ohene Recordings, Antonio J. Allen, Jordan Taylor, JB Taylor">
+        <meta name="author" content="Ohene Recordings">
+        <!-- Externals-->
+        <link rel="stylesheet" href="/css/blueprint/screen3.css" type="text/css">
+        <link rel="stylesheet" href="/css/blueprint/plugins/liquid2.css" type="text/css">
+        <script type="text/javascript" src="/javascript/jquery.js"> </script>
+    </head>
+<body>  
+    <div class="container">
+        <div class="span-11 column grey" style="margin-left:15%;">
+                <form id="request" action="/requests/send_form_email.php" method="post" >
+                    <fieldset>
+                    <legend class="white superlarge">Request Form</legend>
+                    <label class="large" for="first_name">First Name: <input type="text" name="first_name" /> </label>
+                    <label class="large" for="last_name">Last Name: <input type="text" name="last_name" /> </label>
+                    <p/>
+                    <label class="large" for="phone_number" class="required">Phone Number: <input type="tel" placeholder="(xxx)xxx-xxxx" required name="telephone" />  </label>
+                    <label class="large" for="email" class="required">Email Address: <input type="email" placeholder="email@domain.com" required name="email" /></label>
+                    <p/>
+                    <label class="large" for="state">State: <select name="state">
+                    <option value="Indiana">Indiana</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Ohio">Ohio</option>
+                    </select>
+                    </label>
+                    <label class="large" for="city">City: <input type="text" name="city" /></label>
+                    <label class="large" for="zip">Zip Code: <input type="text" name="zip" /></label>
+                    <p/>
+                    <fieldset>
+                    <legend class="large white">Instrumentation</legend>   
+                    <label class="large" for="instrument"><input type="radio" id="instrument" name="instrument" value="instrument">Instrument</label>
+                    </label>
+                    <label class="large" for="ensemble"><input type="radio" id="ensemble" name="instrument" value="ensemble">Ensemble</label>
+                    <label class="large" for="ensemble"><input type="radio" id="Voice" name="instrument" value="voice">Voice</label>
+                    <label class="large" for="instrumentation">Instrument/Voice type: <input type="text" name="instrumentation" placeholder="Saxophone" /></label>
+                    </fieldset>
+                    <p/>
+                    <textarea rows="2" col="5" name="additional" placeholder="Please describe the event. E.g. &#34audition&#34 &#34concert&#34. Also include any additional details."></textarea>
+                    <p/>
+                    <input type="submit" value="Send Request" />
+                    </fieldset>
+                 </form>
+        </div>
+	<div class="superlarge white span-6 push-0 column menub last">
+              <p class="paragraph grey">Should you have any questions or concerns, the staff of Ohene Recordings can be
+        reached through the following methods: </p>
+        <ul class="large" style="margin-bottom:0">Phone: (706)341-1937</ul>
+        <ul class="large" style="margin-top:-1em;">Email: info@ohenerecordings.com</ul>
+        </div>
+            <p style="margin-top:2.3em; margin-right:0em">
+            <ul style="margin-top:-1.5em"><a href="/engineers" class="menu">Engineers</a></ul>   
+            <ul><a href="/services" class="menu">Services</a></ul>
+            <ul><a href="/requests" class="menu">Requests</a></ul>
+            <ul><a href="/contact" class="menu"> Contact</a></ul>
+            <ul><a href="/" class="menu"><img src="/images/ohene2.png" width="150px" style="margin-top:-.5em;margin-left:.5em"></a></ul>
+            </p>
+	 
+	</div>
+    </div>
+</body>
+</html>
