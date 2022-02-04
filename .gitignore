@@ -1,2 +1,4 @@
 .git
-
+*sublime*
+*config.js
+node_modules/*
