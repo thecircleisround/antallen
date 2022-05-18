@@ -1,75 +1,71 @@
 <!DOCTYPE html PUBLIC>
 <html>
-	<head>
-		<title>Antonio Allen</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="description" content="Antonio Allen">
-		<meta name="keywords" content="Antonio J. Allen, Antonio JoVaughn Allen, Antonio Allen">
-		<meta name="author" content="Antonio Allen">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Externals-->
-		<link rel="stylesheet" href="./static/css/Skeleton/css/normalize.css">
-		<link rel="stylesheet" href="./static/css/Skeleton/css/skeleton.css">
-		<link rel="stylesheet" href="./static/css/styles.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ER8MKZJQ2"></script>
-<script src="https://unpkg.com/hyperscript.org@0.9.4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+	<title>Antonio Allen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Antonio Allen">
+	<meta name="keywords" content="Antonio J. Allen, Antonio JoVaughn Allen, Antonio Allen">
+	<meta name="author" content="Antonio Allen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Externals-->
+	<link rel="stylesheet" href="./dist/output.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ER8MKZJQ2"></script>
+	<script src="https://unpkg.com/hyperscript.org@0.9.4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-  gtag('config', 'G-7ER8MKZJQ2');
-</script>
-	</head>
-	<body>
-		<div class="menucontainer">
-			  <div class="menu twelve columns">
-			  <ul class="trade"><a href="#top">to the top</a>
-			  </ul>
-			  <ul><a href="#contact">contact</a>
-			  </ul>
-			  <ul><a href="https://blog.antallen.com">blog</a>
-			  </ul>
-			  </div>
+		gtag('config', 'G-7ER8MKZJQ2');
+	</script>
+</head>
+<body class="bg-white">
+	<div class="fixed z-10 bg-red-400 p-6 w-full">
+		<ul class="flex">
+			<li class="mr-8"><a href="#top">to the top</a>
+			</li>
+			<li class="mr-8"><a href="#contact">contact</a>
+			</li>
+			<li class="mr-8"><a href="https://blog.antallen.com">blog</a>
+			</li>
+		</ul>
+
+	</div>
+	<div class="grid grid-cols-3">
+	<div class="col-span-1"></div>
+		<div class="col-span-1 align-middle items-center" id="top">
+			<p class="text-center"><img src="./static/images/antoniologo.png" width="100%">
+			</p>
+			<p class="text-center -mt-12">
+				programmer | web developer 
+			</p>
 		</div>
-
-		<div class="contentcontainer">
-			<div class="twelve columns row" id="top">
-				<p class="logocontent" style="text-align:center;"><img src="./static/images/antoniologo.png" width="60%">
-				</p>
-					<p class="paragraph" style="margin-top:-10%">
-					programmer | web developer 
-					</p>
-			</div>
-			<div class="twelve columns pagebreak"></div>
-			<div class="twelve columns pagebreak"></div>
-			 <div class="row header twelve columns" id="contact"></div>
-             <div class="twelve columns content" style="padding-bottom:5000px;">
-            <p class="paragraph contact">me@antallen.com</p>
-             </div> 
-			</div>
+		<div id="contact"></div>
+		<div>
+			<p class="paragraph contact">me@antallen.com</p>
+		</div> 
+	</div>
 
 
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script>
-$(function () {
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		$(function () {
 	// ScrollTo
 	$('a[href*=#]:not([href=#])').click(function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		if (target.length) {
-			$('html,body').animate({
-				scrollTop: target.offset().top
-			}, 1000);
-			return false;
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
 		}
-	}
 	});
 
 });
-		</script>
-	</body>
+</script>
+</body>
 </html>
